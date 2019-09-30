@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.191 sec <<< FAILURE!
+testProperties(com.test.TestProperties)  Time elapsed: 0.054 sec  <<< FAILURE!
+java.io.FileNotFoundException: E:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTestingE:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTesting\src\test\java\com\test\Test1.properties (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.test.TestBase.loadData(TestBase.java:15)
+	at com.test.TestBase.getObject(TestBase.java:21)
+	at com.test.TestProperties.testProperties(TestProperties.java:15)
+

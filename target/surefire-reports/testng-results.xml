@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="45812" started-at="2017-08-04T10:45:43Z" finished-at="2017-08-04T10:46:29Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="45812" started-at="2017-08-04T10:45:43Z" finished-at="2017-08-04T10:46:29Z">
+      <class name="com.local.home.selenium.testing.GoogleSearchTest">
+        <test-method status="PASS" signature="testChromeDriverSelenium()[pri:0, instance:com.local.home.selenium.testing.GoogleSearchTest@1698539]" name="testChromeDriverSelenium" duration-ms="45343" started-at="2017-08-04T16:15:43Z" finished-at="2017-08-04T16:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChromeDriverSelenium -->
+      </class> <!-- com.local.home.selenium.testing.GoogleSearchTest -->
+      <class name="com.test.PriorityWiseTest">
+        <test-method status="PASS" signature="login()[pri:1, instance:com.test.PriorityWiseTest@1f792cf]" name="login" duration-ms="1" started-at="2017-08-04T16:16:29Z" finished-at="2017-08-04T16:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:2, instance:com.test.PriorityWiseTest@1f792cf]" name="logout" duration-ms="1" started-at="2017-08-04T16:16:29Z" finished-at="2017-08-04T16:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="search()[pri:3, instance:com.test.PriorityWiseTest@1f792cf]" name="search" duration-ms="1" started-at="2017-08-04T16:16:29Z" finished-at="2017-08-04T16:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- com.test.PriorityWiseTest -->
+      <class name="com.test.TestProperties">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.test.TestProperties@d94a8b]" name="init" is-config="true" duration-ms="1" started-at="2017-08-04T16:16:29Z" finished-at="2017-08-04T16:16:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testProperties()[pri:0, instance:com.test.TestProperties@d94a8b]" name="testProperties" duration-ms="1" started-at="2017-08-04T16:16:29Z" finished-at="2017-08-04T16:16:29Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[E:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTestingE:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTesting\src\test\java\com\test\Test1.properties (The filename, directory name, or volume label syntax is incorrect)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: E:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTestingE:\SOFTWARE\SELENIUM\Eclipse_Workspace\SeleniumTesting\src\test\java\com\test\Test1.properties (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.test.TestBase.loadData(TestBase.java:15)
+	at com.test.TestBase.getObject(TestBase.java:21)
+	at com.test.TestProperties.testProperties(TestProperties.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProperties -->
+      </class> <!-- com.test.TestProperties -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
